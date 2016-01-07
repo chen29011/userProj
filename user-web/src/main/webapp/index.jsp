@@ -10,9 +10,9 @@
 	<form action="${pageContext.request.contextPath }/user/login.do"
 		method="post">
 		userName:<input type="text" name="userName" value="${user.userName }" /><br />
-		password:<input type="password" name="password"
-			value="${user.password }"><br /> <input type="submit"
-			value="login" /><font color="red">${errorMsg }</font>
+		password:<input type="password" name="password" value="${user.password }"><br />
+		<input type="submit" value="login" />
+		<font color="red">${errorMsg }</font>
 	</form>
 </body>
 </html>
