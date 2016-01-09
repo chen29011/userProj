@@ -6,6 +6,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<modules>
+		<module>../user-dao</module>
+		<module>../user-service</module>
+	</modules>
+
 	<properties>
 		<spring.version>4.1.7.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
