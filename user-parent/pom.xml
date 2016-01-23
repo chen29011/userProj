@@ -24,6 +24,8 @@
 		<jstl.version>1.2</jstl.version>
 		<zxing-core-version>3.2.1</zxing-core-version>
 		<zxing-javase-version>3.2.1</zxing-javase-version>
+		<jodd-core-version>3.6.7</jodd-core-version>
+		<fastjson-version>1.2.7</fastjson-version>
 	</properties>
 
 	<dependencyManagement>
@@ -157,6 +159,19 @@
 				<artifactId>javase</artifactId>
 				<version>${zxing-javase-version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.jodd</groupId>
+				<artifactId>jodd-core</artifactId>
+				<version>${jodd-core-version}</version>
+			</dependency>
+			
+			<!-- json工具类jar包 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson-version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

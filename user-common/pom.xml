@@ -7,7 +7,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../user-parent/pom.xml</relativePath>
 	</parent>
-
 	<artifactId>user-common</artifactId>
 	<packaging>jar</packaging>
 
@@ -29,6 +28,16 @@
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jodd</groupId>
+			<artifactId>jodd-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
 		</dependency>
 	</dependencies>
 </project>
