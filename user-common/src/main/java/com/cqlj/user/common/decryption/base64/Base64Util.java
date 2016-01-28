@@ -15,3 +15,8 @@ public class Base64Util {
 		return new String(resultBytes);
 	}
 }
+/*
+ * --"JDK"
+ * --Commons Codec
+ * --Bouncy Castle
+ */
