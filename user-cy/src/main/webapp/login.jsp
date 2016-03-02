@@ -7,19 +7,11 @@
 <title>登录</title>
 </head>
 <body>
-	<form action="cyd/login" method="get">
-	callback
-	nickname
-	user_id
-	sign
-	img_url
-	profile_url
-	<input type="text">
-	<input type="text">
-	<input type="text">
-	<input type="text">
-	<input type="text">
-	<input type="submit" value="登录">
+	<form action="cy/myLogin" method="get">
+
+		用户名： <input type="text" name="user_id" value="123456" /><br> 密码：
+		<input type="password" name="password" value="admin" /><br> <input
+			type="submit" value="登录">
 	</form>
 </body>
 </html>
