@@ -1,4 +1,4 @@
-package com.cqlj.changyan;
+package com.cqlj.user.cy;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

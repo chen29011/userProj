@@ -1,4 +1,4 @@
-package com.cqlj.changyan;
+package com.cqlj.user.cy;
 
 public class User {
 	public int user_id;// 用户在自己网站的id
