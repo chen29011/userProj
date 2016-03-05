@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeMappings>
+	<typeMapping>
+		<describe></describe>
+		<java>char</java>
+		<mysql>char</mysql>
+	</typeMapping>
+
+	<typeMapping>
+		<describe></describe>
+		<java>String</java>
+		<mysql>varchar,tinytext,text,mediumtext,longtext</mysql>
+	</typeMapping>
+
+	<typeMapping>
+		<describe></describe>
+		<java>int</java>
+		<mysql>int,integer</mysql>
+	</typeMapping>
+
+	<typeMapping>
+		<describe></describe>
+		<java>float</java>
+		<mysql>float</mysql>
+	</typeMapping>
+
+	<typeMapping>
+		<describe></describe>
+		<java>double</java>
+		<mysql>double</mysql>
+	</typeMapping>
+
+	<typeMapping>
+		<describe></describe>
+		<java>BigDecimal</java>
+		<mysql>decimal</mysql>
+	</typeMapping>
+
+	<typeMapping>
+		<describe></describe>
+		<java>BigDecimal</java>
+		<mysql>date</mysql>
+	</typeMapping>
+</typeMappings>

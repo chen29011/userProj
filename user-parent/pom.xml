@@ -26,6 +26,7 @@
 		<zxing-javase-version>3.2.1</zxing-javase-version>
 		<jodd-core-version>3.6.7</jodd-core-version>
 		<fastjson-version>1.2.7</fastjson-version>
+		<dom4j-version>1.6.1</dom4j-version>
 	</properties>
 
 	<dependencyManagement>
@@ -164,7 +165,7 @@
 				<artifactId>jodd-core</artifactId>
 				<version>${jodd-core-version}</version>
 			</dependency>
-			
+
 			<!-- json工具类jar包 -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -172,6 +173,11 @@
 				<version>${fastjson-version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+				<version>${dom4j-version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
