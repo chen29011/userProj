@@ -27,6 +27,7 @@
 		<jodd-core-version>3.6.7</jodd-core-version>
 		<fastjson-version>1.2.7</fastjson-version>
 		<dom4j-version>1.6.1</dom4j-version>
+		<freemarker-version>2.3.23</freemarker-version>
 	</properties>
 
 	<dependencyManagement>
@@ -178,6 +179,13 @@
 				<artifactId>dom4j</artifactId>
 				<version>${dom4j-version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>org.freemarker</groupId>
+				<artifactId>freemarker</artifactId>
+				<version>${freemarker-version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>
