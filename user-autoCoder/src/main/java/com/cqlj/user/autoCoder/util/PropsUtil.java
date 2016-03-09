@@ -13,7 +13,7 @@ public class PropsUtil {
 
 	static {
 		props = new Properties();
-		String url = Entity.class.getResource("/").getPath();
+		String url = PropsUtil.class.getResource("/").getPath();
 		try {
 			InputStream in = new FileInputStream(new File(url + "resourceConfig.properties"));
 			props.load(in);

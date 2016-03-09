@@ -45,41 +45,13 @@ public class GenEntity {
 	 * @param clazz
 	 * @throws Exception
 	 */
-	private void genFileHandler() throws Exception {
+	public void genFileHandler(Map<String, Object> targetClazz, String fileName) throws Exception {
 		/* 1，获取模板 */
 		Template temp = configuration.getTemplate("testEntity.ftl", pageEncoding);
 		temp.setEncoding(pageEncoding);
 
-		/* 2，设置模板的数据内容Map */
-		// 获取实体类名,表名,包名
-		String entityName = "Teacher";
-		String tableName = "t_teacher";
-		String packageName = "com.cqlj.user.autoCoder.entity";
-
-		// 填充Map
-		Map<String, Object> targetClazz = new HashMap<String, Object>();
-		List<Map<String, String>> fields = new ArrayList<Map<String, String>>();
-		
-		targetClazz.put("packageName", packageName);
-		targetClazz.put("entityName", entityName);
-		targetClazz.put("tableName", tableName);
-		targetClazz.put("fields", fields);
-
-		
-		Map<String, String> field = new HashMap<String, String>();
-		field.put("name", "stuName");
-		field.put("type", "String");
-		
-		fields.add(field);
-		
-		Map<String, String> field2 = new HashMap<String, String>();
-		field2.put("name", "age");
-		field2.put("type", "int");
-		fields.add(field2);
-		
-
 		// 判断目标文件夹不存在，则新建文件夹
-		String fileName = System.getProperty("user.dir") + "/src/main/java/"+packageName.replace(".", "/")+"/"+entityName+".java";
+		
 		System.out.println("-------开始生成" + fileName + "文件......------");
 
 		File target = new File(fileName);
@@ -89,10 +61,5 @@ public class GenEntity {
 		out.close();
 
 		System.out.println("-------" + fileName + "文件生成完毕!-------\n");
-	}
-	
-	public static void main(String[] args) throws Exception {
-		GenEntity ge = new GenEntity();
-		ge.genFileHandler();
 	}
 }
