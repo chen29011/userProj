@@ -4,7 +4,7 @@ public final class Constants {
 	/** 数据库驱动  */
 	public final static String DRIVER = "com.mysql.jdbc.Driver";
 	/** 数据库连接  */
-	public final static String URL = "jdbc:mysql://localhost:3306/mytest";
+	public final static String URL = "jdbc:mysql://localhost:3306/user_proj";
 	/** 数据库用户名  */
 	public final static String USERNAME = "root";
 	/** 数据库密码  */

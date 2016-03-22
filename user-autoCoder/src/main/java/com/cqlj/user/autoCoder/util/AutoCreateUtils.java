@@ -35,10 +35,10 @@ public class AutoCreateUtils {
 	 * @throws SQLException
 	 * @throws DocumentException
 	 */
-	public static List<Map<String, String>> getTablesMsg(String tableName)
+	public static List<Map<String, String>> getTablesMsg(String dbName, String tableName)
 			throws ClassNotFoundException, SQLException, DocumentException {
-		String sql = "SELECT column_name AS columnName, data_type AS dataType, column_comment AS comment FROM information_schema.columns WHERE table_name ='"
-				+ tableName + "'";
+		String sql = "SELECT column_name AS columnName, data_type AS dataType, column_comment AS comment FROM information_schema.columns WHERE table_schema = '"
+				+ dbName + "' and table_name ='" + tableName + "'";
 		System.out.println(sql);
 		ResultSet rs = DBConnection.getResultSet(sql);
 		List<Map<String, String>> fields = new ArrayList<Map<String, String>>();

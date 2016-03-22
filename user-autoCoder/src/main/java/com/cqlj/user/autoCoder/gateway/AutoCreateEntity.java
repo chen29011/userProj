@@ -12,13 +12,15 @@ import com.cqlj.user.autoCoder.util.PropsUtil;
 
 public class AutoCreateEntity {
 	public static void main(String[] args) throws Exception {
+		// 获取数据库名称
+		String dbName = PropsUtil.getParamcValue("dbName");
 		// 获取所有表名
 		List<String> tablesName = AutoCreateUtils.getTablesName();
 		Iterator iter = tablesName.iterator();
 		while (iter.hasNext()) {
 			String tableName = (String) iter.next();
 			// 获取表对应的表信息
-			List<Map<String, String>> tablesMsg = AutoCreateUtils.getTablesMsg(tableName);
+			List<Map<String, String>> tablesMsg = AutoCreateUtils.getTablesMsg(dbName, tableName);
 			String packageName = PropsUtil.getParamcValue("entityPackageName");
 			String entityName = AutoCreateUtils.getEntityName(tableName);
 			Map<String, Object> targetClazz = new HashMap<String, Object>();
